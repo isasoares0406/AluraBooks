@@ -1,0 +1,32 @@
+.tópicos {
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.tópicos__título {
+    color: var(--branco);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.tópicos__lista {
+    display: flex;
+/* Serve para fazer a quebra de linha, quando fazemos um flex item, por padrão ele quer colocar tudo um do lado do outro, usamos o wrap para quebrar a linha quando chegar no final*/
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.tópicos__item {
+    margin: 2em 0.5em;
+}
+
+.tópicos__link {
+    color: var(--branco);
+    padding: 1em;
+    background-color: var(--laranja);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
