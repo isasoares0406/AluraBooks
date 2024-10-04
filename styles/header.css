@@ -58,3 +58,88 @@
 .container__botao {
     display: none;
 }
+
+.container__título {
+    display: none;
+}
+
+.opções {
+    display: none;
+}
+
+.container__texto {
+    display: none;
+}
+
+/* @media é para chamar o media query
+    screen é o  media type (o tipo que vamos usar, no caso tela)
+    and = e também que o mínimo da largura da tela seja 1024px - tamanho que o designer colocou no figma */
+@media screen and (min-width: 1024px) {
+
+    .container__título,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundária);
+        font-size: 30px;
+    }
+
+    .container__título {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opções {
+        display: flex;
+    }
+
+    .opções__item {
+        padding: 0 1em;
+    }
+
+    .opções__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+
+    .opções__botão:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opções__botão {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabeçalho {
+        padding:0 2em;
+    }
+
+    .opções {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+}
